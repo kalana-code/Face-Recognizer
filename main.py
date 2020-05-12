@@ -8,6 +8,7 @@ def DownSampling(img):
     vector = []
     # Convert RGB image to Grey-scale
     greyScaleArr = np.array(cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) , dtype = float)
+    
     # Down sampling (meka hithala gahapu ekk)
     downSampledArr = greyScaleArr[::5,::5]
     # convert 2D matrix to row matrix
